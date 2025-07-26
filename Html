@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promise's Music Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="p-5 bg-gray-800 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">🎵 Promise Music</h1>
+    <nav>
+      <a href="#music" class="mx-2 hover:text-yellow-300">Music</a>
+      <a href="#contact" class="mx-2 hover:text-yellow-300">Contact</a>
+    </nav>
+  </header>
+
+  <section class="p-5" id="music">
+    <h2 class="text-xl mb-4">Featured Songs</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="songList">
+      <!-- Songs injected here by JS -->
+    </div>
+  </section>
+
+  <section class="p-5 bg-gray-800" id="contact">
+    <h2 class="text-xl mb-4">Contact Us</h2>
+    <form class="grid gap-3">
+      <input type="text" placeholder="Name" class="p-2 rounded bg-gray-700"/>
+      <input type="email" placeholder="Email" class="p-2 rounded bg-gray-700"/>
+      <textarea placeholder="Message" class="p-2 rounded bg-gray-700"></textarea>
+      <button type="submit" class="bg-yellow-400 text-black font-bold py-2 px-4 rounded hover:bg-yellow-300">Send</button>
+    </form>
+  </section>
+
+  <footer class="text-center p-3 bg-gray-900 text-sm text-gray-400">
+    &copy; 2025 Promise Music. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
